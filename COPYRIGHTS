@@ -1,0 +1,14 @@
+COPYRIGHT STATUS for RaschSampler
+---------------------------------
+
+This R code is
+
+  Copyright (C) 2006 Reinhold Hatzinger, Patrick Mair and Norman Verhelst
+
+The Fortran code is
+
+  Copyright (C) 2006 Norman Verhelst
+
+All code is subject to the GNU General Public License, Version 2. See
+the file COPYING for the exact conditions under which you may
+redistribute it.
