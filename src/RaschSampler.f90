@@ -256,15 +256,20 @@ subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
       end subroutine pack_matrix
 
       subroutine findab(ta,tb,i,j,a,b)
-        logical(kind=1):: ta(n),tb(n)
+ !!!!!  logical(kind=1):: ta(n),tb(n)
+        logical(kind=1):: ta(n),tb(n),test(n)
         integer(kind=4)::a,b,i,j
         tw=(ta.neqv.tb)
         if(tfixnow)then
           tw(i)=.false.
           tw(j)=.false.
         endif
-        a=count(ta.and.tw)
-        b=count(tb.and.tw)
+             test=ta.and.tw
+             a=count(test)
+             test=tb.and.tw
+             b=count(test)
+ !!!!!       a=count(ta.and.tw)
+ !!!!!       b=count(tb.and.tw)
       end subroutine findab
 
 
@@ -287,6 +292,8 @@ subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
       subroutine make_matrix(it)
         integer(kind=4),intent(in)::it
         integer(kind=4)           ::m,i,j,ii,jj
+       !logical(kind=1),allocatable     :: test(:)  !!!
+       logical(kind=1)    :: test(n)  !!!
 
         ii=a_kol(it)
         jj=b_kol(it)
@@ -330,7 +337,11 @@ subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
             if(j.eq.m)exit
           end do
           ! check whether matrix has changed
-          m=count(twa(1:n).eqv.t_in(1:n,ii))
+ !!!!!
+ !!!!!    test=twa
+          test=twa(1:n).eqv.t_in(1:n,ii)
+          m=count(test)
+ !!!!!         m=count(twa(1:n).eqv.t_in(1:n,ii))
           if(m.ne.n)exit ! the matrix has changed
         end do  ! the matrix has not changed; a new combination is tried.
         ! the changes are inserted in the matrix t_in

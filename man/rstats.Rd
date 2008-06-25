@@ -16,7 +16,6 @@ rstats(RSobj, userfunc)
      on the (original and) sampled matrices. The user function can only
      have an object of type matrix as input.}
 }
-}
 \value{
       A list of objects as specified in the user supplied function
 }

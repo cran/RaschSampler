@@ -5,7 +5,6 @@
   The object of class \code{RSctr} represents the control parameter
   specification for the sampling function \code{\link{rsampler}}.
 }
-}
 \value{
    A legitimate \code{\link{RSctr}} object is a list with components
   \item{burn_in}{
@@ -19,7 +18,7 @@
       }
   \item{step}{
       controls the number number of void matrices generated in the the burn in
-      process and when effective matrices are generated (see note 
+      process and when effective matrices are generated (see note
       in \code{\link{rsctrl}}). }
   \item{seed}{
       is the indicator for the seed of the random number generator.
