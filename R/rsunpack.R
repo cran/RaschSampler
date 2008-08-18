@@ -1,5 +1,5 @@
 "rsunpack" <-
-function(x,n,k,nwords,userfunc){
+function(x,n,k,nwords,userfunc,...){
      # check for NAs (-2^31 not defined in R) in simulated matrices
      # set value to 0
 
@@ -29,7 +29,7 @@ function(x,n,k,nwords,userfunc){
         m[idx1,idx2]<-1
      }
      # calls user function to calculate statistic(s)
-     RET<-userfunc(m)
+     RET<-userfunc(m,...)
      RET
 }
 

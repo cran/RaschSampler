@@ -28,12 +28,12 @@ rsctrl(burn_in = 100, n_eff = 100, step = 16, seed = 0, tfixed = FALSE)
                 process and when effective matrices are generated (see note
                 below). The default is \code{step = 16}. }
   \item{seed}{
-      is the indicator for the seed of the random number generator.
+      is the indicator for the seed of the random number generator. 
       Its value must be in the range 0 and 2147483646 (2**31-2).
       If the value of seed equals zero, a seed is generated
       by the sampling function \code{\link{rsampler}}
       (dependent on the system's clock) and its value is returned
-      in the output. If seed is not equal to zero, its
+      in the output. If seed is not equal to zero, its 
       value is used as the seed of the random number generator.
       In that case its value is unaltered at output.
       The default is \code{seed = 0}.

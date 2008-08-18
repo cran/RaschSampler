@@ -1,8 +1,11 @@
 "rstats" <-
-function(RSobj,userfunc)
+function(RSobj,userfunc,...)
 {
-    if (!(class(RSobj)=="RSmpl" || class(RSobj)=="RSmplext"))
-         stop("RSobj not a sample object - see help(\"rstats\")")
+    obj.name <- deparse(substitute(RSobj))
+    if (!(class(RSobj)=="RSmpl" || class(RSobj)=="RSmplext")){
+         err.text<-paste(obj.name," is not a sample object - see help(\"rsextrobj\")",sep ="",collapse="")
+         stop(err.text)
+    }
 
     # extracts simulated matrices into three dimensional array sim
     n_tot  <- RSobj$n_tot
@@ -16,7 +19,7 @@ function(RSobj,userfunc)
 
     # decode simulated matrices and apply user function
     #RET<-unlist(lapply(sim,rsunpack,n,k,nwords,userfunc))
-    RET<-lapply(sim,rsunpack,n,k,nwords,userfunc)
+    RET<-lapply(sim,rsunpack,n,k,nwords,userfunc,...)
     RET
 }
 

@@ -35,15 +35,15 @@ matrices with given marginal totals.
 \tabular{ll}{
 Package: \tab RaschSampler\cr
 Type: \tab Package\cr
-Version: \tab 0.8.1\cr
-Date: \tab 2008-06-25\cr
+Version: \tab 0.8.2\cr
+Date: \tab 2009-08-18\cr
 License: \tab  GNU GPL 2, June 1991\cr
 }
 The user has to supply a binary input matrix. After defining appropriate control
 parameters using \code{\link{rsctrl}} the sampling function \code{\link{rsampler}}
 may be called to obtain an object of class \code{\link{RSmpl}} which contains the
 generated random matrices in encoded form. After defining an appropriate function
-to operate on a binary matrix (e.g., calculate a statistic such as \code{\link{phi}})
+to operate on a binary matrix (e.g., calculate a statistic such as \code{\link{phi.range}})
 the application of this function to the sampled matrices is performed
 using \code{\link{rstats}}. Prior to applying the user defined function, \code{\link{rstats}}
 decodes the matrices packed in the \code{\link{RSmpl}}-object.\cr

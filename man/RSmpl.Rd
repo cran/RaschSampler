@@ -16,7 +16,7 @@
   \item{burn_in}{length of the burn in process}
   \item{n_eff}{number of generated matrices (effective matrices)}
   \item{step}{controls the number number of void matrices generated in the the burn in
-              process and when effective matrices are generated (see note
+              process and when effective matrices are generated (see note 
               in \code{\link{rsctrl}}). }
   \item{seed}{starting value for the random number generator}
   \item{n_tot}{number of matrices in \code{outvec}.}

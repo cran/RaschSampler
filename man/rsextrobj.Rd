@@ -1,8 +1,8 @@
 \name{rsextrobj}
 \alias{rsextrobj}
-\title{ Extracting Sample Matrices}
+\title{Extracting Encoded Sample Matrices}
 \description{
-  Utility function to extract some of the generated matrices.
+  Utility function to extract some of the generated matrices, still in encoded form.
 }
 \usage{
 rsextrobj(RSobj, start = 1, end = 8192)
@@ -30,7 +30,7 @@ rsextrobj(RSobj, start = 1, end = 8192)
   \item{tfixed}{\code{TRUE}, if diagonals of \code{inpmat} are fixed}
   \item{burn_in}{length of the burn in process}
   \item{n_eff}{number of generated matrices (effective matrices)}
-  \item{step}{controls the number number of void matrices generated in the the burn in
+  \item{step}{controls the number number of void matrices generated in the burn in
               process and when effective matrices are generated (see note
               in \code{\link{rsctrl}}). }
   \item{seed}{starting value for the random number generator}
@@ -45,8 +45,10 @@ rsextrobj(RSobj, start = 1, end = 8192)
       \code{n_tot = n_eff}.\cr
       For saving and loading objects
       of class \code{RSobj} see the example below.
+
+      For extracting a decoded (directly usable) matrix use \code{\link{rsextrmat}}.
 }
-\seealso{\code{\link{rsampler}} }
+\seealso{\code{\link{rsampler}}, \code{\link{rsextrmat}} }
 \examples{
 ctr <- rsctrl(burn_in = 10, n_eff = 3, step=10, seed = 0, tfixed = FALSE)
 mat <- matrix(sample(c(0,1), 50, replace = TRUE), nr = 10)
