@@ -13,8 +13,8 @@
    30 columns (referring to items) \cr
 
   The format of \code{xmplbig} is:\cr
-  1024 rows (referring to subjects) \cr
-    64 columns (referring to items) \cr
+  4096 rows (referring to subjects) \cr
+   128 columns (referring to items) \cr
   \code{xmplbig} has the maximum dimensions that the RaschSampler package
   can handle currently.
 }

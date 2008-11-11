@@ -39,16 +39,16 @@ rsampler(inpmat, controls = rsctrl())
   \item{outvec}{vector of encoded random matrices}
   \item{ier}{error code}
 }
-\references{Verhelst, N. D. (2006) An efficient MCMC-algorithm to sample binary
-    matrices with fixed marginals (under revision)}
+\references{Verhelst, N. D. (2008) An Efficient MCMC Algorithm to Sample Binary
+Matrices with Fixed Marginals. Psychometrika, Volume 73, Number 4}
 \author{Reinhold Hatzinger, Norman Verhelst}
 \note{
    An element of \code{outvec} is a four byte (or 32 bits) integer.  The matrices
    to be output are stored bitwise (some bits
    are unused, since a integer is used for every row of a matrix.  So
    the number of integers per row needed equals (k+31)/32 (integer division),
-   which is one or two in the present application since the number of columns
-   must not exceed 64 (see \code{\link{rsctrl}}).\cr
+   which is one to four in the present implementation since the number of columns
+   and rows must not exceed 128 and 4096, respectively.\cr
 
    The summary method (\code{\link{summary.RSmpl}}) prints
    information on the content of the output object.

@@ -10,8 +10,8 @@ function(err)
       r<-c(1,r)
       rev(r)
     }
-    errortxt<-c("\tn < 0 or n > 1024\n",
-                "\tk < 0 or k > 64\n",
+    errortxt<-c("\tn < 0 or n > 4096\n",
+                "\tk < 0 or k > 128\n",
                 "\tn_eff < 0 or n_eff > 8191\n",
                 "\tburn_in < 0\n",
                 "\tstep <= 0\n",

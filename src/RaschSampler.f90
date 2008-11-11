@@ -1,4 +1,3 @@
-
 subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
 
       ! sample binary matrices with given marginals.
@@ -22,8 +21,8 @@ subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
       !           not used bits are set to zero.
       !        ier: output error code
       !             ier = 0: O.K.
-      !                   1: n > nmax = 1024 = 2**10
-      !                   2: k > kmax = 64 = 2**6
+      !                   1: n > nmax = 1024 = 2**10   !!!!!! changed to 2**12 in 0.8-3
+      !                   2: k > kmax = 64 = 2**6      !!!!!! changed to 2**7  in 0.8-3
       !                   4: n_eff > n_effmax = 8191 = 2**13 - 1
       !                   8: burn_in < 0
       !                  16: step <= 0
@@ -43,7 +42,8 @@ subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
 
       character(len=10)               :: timevec
 
-      integer(kind=4),parameter       :: nmax=1024,kmax=64,n_effmax=8191
+      !integer(kind=4),parameter       :: nmax=1024,kmax=64,n_effmax=8191  !!!!!! kmax changed to 2**7 nmax changed to 2**12
+      integer(kind=4),parameter       :: nmax=4096,kmax=128,n_effmax=8191
       integer(kind=4), allocatable    :: a(:),b(:),aold(:),bold(:),a_kol(:),b_kol(:),iwork(:)
       integer(kind=4)                 :: i,j,m,kk2,kk3,it,krand,k2,k3,nhex,k2old,k3old,nhexold
       integer(kind=4)                 :: x1,x2  ! x1 and x2 are reserved for the random generator
@@ -535,15 +535,5 @@ subroutine sampler(n,k,inputmat,tfixed,burn_in,n_eff,step,seed,outputvec,ier)
         end do
 
       end do
-
-      ! norman: all that follows is not needed.
-      !!! t_out=t_in
-      !!! replaced by
-      !t_out=0
-      !do i=1,n
-      !  do j=1,k
-      !    if (t_in(i,j).eqv..true.) t_out(i,j)=ibset(t_out(i,j),0)
-      !  end do
-      !end do
 
       end subroutine unpack

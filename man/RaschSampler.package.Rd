@@ -35,8 +35,8 @@ matrices with given marginal totals.
 \tabular{ll}{
 Package: \tab RaschSampler\cr
 Type: \tab Package\cr
-Version: \tab 0.8.2\cr
-Date: \tab 2009-08-18\cr
+Version: \tab 0.8-3\cr
+Date: \tab 2009-11-11\cr
 License: \tab  GNU GPL 2, June 1991\cr
 }
 The user has to supply a binary input matrix. After defining appropriate control
@@ -62,9 +62,15 @@ on the control object \code{\link{RSctr}} which is obtained from using
 Maintainer: <reinhold.hatzinger@wu-wien.ac.at>
 }
 \references{
-Verhelst, N. D. (2008) An efficient MCMC-algorithm to sample binary
-matrices with fixed marginals. Psychometrika, to appear\cr
+Verhelst, N. D. (2008) An Efficient MCMC Algorithm to Sample Binary
+Matrices with Fixed Marginals. Psychometrika, Volume 73, Number 4\cr
 Verhelst, N. D., Hatzinger, R., and Mair, P. (2007) The Rasch Sampler, Journal of Statistical Software, Vol. 20, Issue 4, Feb 2007
 }
+\note{The current implementation allows for data matrices up to 4096 rows and 128 columns.
+      This can be changed by setting \code{nmax} and \code{kmax} in \code{RaschSampler.f90}
+      to values which are a power of 2. These values should also be changed in \code{rserror.R}.
+      In case of compilation errors (due to a bug in Linux distributions of GCC 4.3) please use
+      \code{RaschSampler.f90} from package version 0.8-1 and change \code{nmax} and \code{kmax}
+      accordingly (or use GCC 4.4).}
 \keyword{ package }
 
