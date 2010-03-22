@@ -35,8 +35,8 @@ matrices with given marginal totals.
 \tabular{ll}{
 Package: \tab RaschSampler\cr
 Type: \tab Package\cr
-Version: \tab 0.8-3\cr
-Date: \tab 2009-11-11\cr
+Version: \tab 0.8-4\cr
+Date: \tab 2010-03-22\cr
 License: \tab  GNU GPL 2, June 1991\cr
 }
 The user has to supply a binary input matrix. After defining appropriate control
@@ -69,6 +69,10 @@ Verhelst, N. D., Hatzinger, R., and Mair, P. (2007) The Rasch Sampler, Journal o
 \note{The current implementation allows for data matrices up to 4096 rows and 128 columns.
       This can be changed by setting \code{nmax} and \code{kmax} in \code{RaschSampler.f90}
       to values which are a power of 2. These values should also be changed in \code{rserror.R}.
+
+      For convenience, we reuse the Fortran code of package version 0.8-1 which cicumvents the
+      compiler bug in Linux distributions of GCC 4.3. The following note from package version 0.8-3
+      is thus obsolete:
       In case of compilation errors (due to a bug in Linux distributions of GCC 4.3) please use
       \code{RaschSampler.f90} from package version 0.8-1 and change \code{nmax} and \code{kmax}
       accordingly (or use GCC 4.4).}
