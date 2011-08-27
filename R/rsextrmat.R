@@ -9,7 +9,7 @@ function(RSobj, mat.no = 1)
     if(mat.no > RSobj$n_tot)
          stop("\n\tElement ",mat.no," not available (",obj.name," has ", RSobj$n_tot, " elements).")
     obj<-rsextrobj(RSobj, start = mat.no, end = mat.no)
-    RET<-rstats(obj, function(x) matrix(x, nr = obj$n))[[1]]
+    RET<-rstats(obj, function(x) matrix(x, nrow = obj$n))[[1]]
     RET
 }
 

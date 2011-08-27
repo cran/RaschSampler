@@ -35,8 +35,8 @@ matrices with given marginal totals.
 \tabular{ll}{
 Package: \tab RaschSampler\cr
 Type: \tab Package\cr
-Version: \tab 0.8-4\cr
-Date: \tab 2010-03-22\cr
+Version: \tab 0.8-5\cr
+Date: \tab 2011-08-27\cr
 License: \tab  GNU GPL 2, June 1991\cr
 }
 The user has to supply a binary input matrix. After defining appropriate control

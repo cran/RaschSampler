@@ -20,12 +20,14 @@ function(x,n,k,nwords,userfunc,...){
                  as.integer(n),
                  as.integer(k)
      )
-     m<-matrix(out$mat,nr=n)
+     m<-matrix(out$mat,nrow=n)
      # replace NAs with bitpattern corresponding to -2^31,
      # i.e., 0 0 0.... 0 1
      if (nas) {
-        idx1<-trunc(idx/nwords)+idx%%nwords  # index for rows
-        idx2<-32+32*(1-idx%%2)*(nwords-1)    # index for column
+        idx1 <- ceiling(idx/nwords)                  # index for rows
+        targetbyte <- idx%%nwords                    # which byte in row is affected
+        last <- k%%32                                # last column in targetbyte
+        idx2 <- (targetbyte - 1*(last!=0))*32 + last # index for column
         m[idx1,idx2]<-1
      }
      # calls user function to calculate statistic(s)
