@@ -1,5 +1,4 @@
 \name{RaschSampler-package}
-\alias{RaschSampler-package}
 \alias{RaschSampler}
 \docType{package}
 \title{Rasch Sampler Package}
@@ -32,12 +31,12 @@ has implemented an appropriate option, thus it can be also used for sampling ran
 matrices with given marginal totals.
 }
 \details{
-\tabular{ll}{
-Package: \tab RaschSampler\cr
-Type: \tab Package\cr
-Version: \tab 0.8-5\cr
-Date: \tab 2011-08-27\cr
-License: \tab  GNU GPL 2, June 1991\cr
+\tabular{ll}{%
+Package:\tab RaschSampler\cr
+Type:   \tab Package\cr
+Version:\tab 0.8-6\cr
+Date:   \tab 2012-07-03\cr
+License:\tab GNU GPL 2, June 1991\cr%
 }
 The user has to supply a binary input matrix. After defining appropriate control
 parameters using \code{\link{rsctrl}} the sampling function \code{\link{rsampler}}
@@ -57,13 +56,12 @@ on the control object \code{\link{RSctr}} which is obtained from using
 \code{\link{rsctrl}} containing the specification for the sampling routine.
 
 }
-\author{Reinhold Hatzinger, Patrick Mair, Norman Verhelst
+\author{Reinhold Hatzinger, Patrick Mair, Norman D. Verhelst
 
-Maintainer: <reinhold.hatzinger@wu-wien.ac.at>
+Maintainer: <reinhold.hatzinger@wu.ac.at>
 }
 \references{
-Verhelst, N. D. (2008) An Efficient MCMC Algorithm to Sample Binary
-Matrices with Fixed Marginals. Psychometrika, Volume 73, Number 4\cr
+Verhelst, N. D. (2008) An Efficient MCMC Algorithm to Sample Binary Matrices with Fixed Marginals. Psychometrika, Volume 73, Number 4\cr
 Verhelst, N. D., Hatzinger, R., and Mair, P. (2007) The Rasch Sampler, Journal of Statistical Software, Vol. 20, Issue 4, Feb 2007
 }
 \note{The current implementation allows for data matrices up to 4096 rows and 128 columns.
@@ -76,5 +74,4 @@ Verhelst, N. D., Hatzinger, R., and Mair, P. (2007) The Rasch Sampler, Journal o
       In case of compilation errors (due to a bug in Linux distributions of GCC 4.3) please use
       \code{RaschSampler.f90} from package version 0.8-1 and change \code{nmax} and \code{kmax}
       accordingly (or use GCC 4.4).}
-\keyword{ package }
-
+\keyword{package}
