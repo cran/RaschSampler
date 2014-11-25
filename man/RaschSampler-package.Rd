@@ -34,8 +34,8 @@ matrices with given marginal totals.
 \tabular{ll}{%
 Package:\tab RaschSampler\cr
 Type:   \tab Package\cr
-Version:\tab 0.8-6\cr
-Date:   \tab 2012-07-03\cr
+Version:\tab 0.8-7\cr
+Date:   \tab 2014-11-25\cr
 License:\tab GNU GPL 2, June 1991\cr%
 }
 The user has to supply a binary input matrix. After defining appropriate control
@@ -58,7 +58,7 @@ on the control object \code{\link{RSctr}} which is obtained from using
 }
 \author{Reinhold Hatzinger, Patrick Mair, Norman D. Verhelst
 
-Maintainer: <reinhold.hatzinger@wu.ac.at>
+Maintainer: <mair@fas.harvard.edu>
 }
 \references{
 Verhelst, N. D. (2008) An Efficient MCMC Algorithm to Sample Binary Matrices with Fixed Marginals. Psychometrika, Volume 73, Number 4\cr

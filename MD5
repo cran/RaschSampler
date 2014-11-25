@@ -1,6 +1,5 @@
-ceee64a8ba55a3f083e817ddaf7315c4 *COPYRIGHTS
-c0d71f2b80eddc0fa09d536674f54a93 *DESCRIPTION
-67bf5857ff434014406d2c492a4d9f43 *NAMESPACE
+c48645e0cea839ea405a24b584e1d977 *DESCRIPTION
+b0e4b24c80fcfc422df602bafcf89ecb *NAMESPACE
 37383b86a5a2d72e3c196556e3eaf09c *R/phi.range.R
 da2aaf90411032f77c125a1802a17c9f *R/rsampler.R
 58c7acdcb60e5fef2d4bad8ff79f3751 *R/rsctrl.R
@@ -16,7 +15,7 @@ bac1d538a1aef726f38615aa18f3d48a *data/xmpl.rda
 1fc251a885b608884a2e4b3240d92259 *data/xmplbig.rda
 d3482a367fc1f9aaa27ec2e1618115c4 *man/RSctr.Rd
 a0bfdc2c3a0156ea4cd2bcbdee7dd8e8 *man/RSmpl.Rd
-58adc0104c298a5863dc2b4aea916a4c *man/RaschSampler-package.Rd
+1b2c910ce3a3cd0980ca245f6d6e4bab *man/RaschSampler-package.Rd
 37b00ccd880232d2f889b84dc84c5dc8 *man/phi.range.Rd
 ade46dd1d3d391419c9bfc573620a3d0 *man/rsampler.Rd
 61388178ae969add6843305c46c1d72a *man/rsctrl.Rd

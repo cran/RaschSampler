@@ -1,4 +1,5 @@
 useDynLib(RaschSampler)
+import("stats")
 export(rsampler)
 export(rstats)
 export(rsctrl)
