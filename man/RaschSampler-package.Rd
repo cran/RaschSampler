@@ -34,8 +34,8 @@ matrices with given marginal totals.
 \tabular{ll}{%
 Package:\tab RaschSampler\cr
 Type:   \tab Package\cr
-Version:\tab 0.8-7\cr
-Date:   \tab 2014-11-25\cr
+Version:\tab 0.8-8\cr
+Date:   \tab 2015-07-23\cr
 License:\tab GNU GPL 2, June 1991\cr%
 }
 The user has to supply a binary input matrix. After defining appropriate control
@@ -62,16 +62,14 @@ Maintainer: <mair@fas.harvard.edu>
 }
 \references{
 Verhelst, N. D. (2008) An Efficient MCMC Algorithm to Sample Binary Matrices with Fixed Marginals. Psychometrika, Volume 73, Number 4\cr
-Verhelst, N. D., Hatzinger, R., and Mair, P. (2007) The Rasch Sampler, Journal of Statistical Software, Vol. 20, Issue 4, Feb 2007
+Verhelst, N. D., Hatzinger, R., and Mair, P. (2007) The Rasch Sampler. Journal of Statistical Software, Vol. 20, Issue 4, Feb 2007
 }
 \note{The current implementation allows for data matrices up to 4096 rows and 128 columns.
       This can be changed by setting \code{nmax} and \code{kmax} in \code{RaschSampler.f90}
       to values which are a power of 2. These values should also be changed in \code{rserror.R}.
 
       For convenience, we reuse the Fortran code of package version 0.8-1 which cicumvents the
-      compiler bug in Linux distributions of GCC 4.3. The following note from package version 0.8-3
-      is thus obsolete:
-      In case of compilation errors (due to a bug in Linux distributions of GCC 4.3) please use
+      compiler bug in Linux distributions of GCC 4.3. In case of compilation errors (due to a bug in Linux distributions of GCC 4.3) please use
       \code{RaschSampler.f90} from package version 0.8-1 and change \code{nmax} and \code{kmax}
       accordingly (or use GCC 4.4).}
 \keyword{package}
