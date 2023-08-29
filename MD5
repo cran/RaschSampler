@@ -1,12 +1,12 @@
-0f3a11ff77d31df178fcc6dc3d1918f3 *DESCRIPTION
-b0e4b24c80fcfc422df602bafcf89ecb *NAMESPACE
+ccc9708be59f8a5163ca676b907e6cba *DESCRIPTION
+3317f91a8088aa8a509099eb5f808e0b *NAMESPACE
 37383b86a5a2d72e3c196556e3eaf09c *R/phi.range.R
-da2aaf90411032f77c125a1802a17c9f *R/rsampler.R
+a880a9eec81089cf678efadc079e12d2 *R/rsampler.R
 58c7acdcb60e5fef2d4bad8ff79f3751 *R/rsctrl.R
 96f255d9169d2c9b8b0121c457df43de *R/rserror.R
-84af75ad5133358a996b4f1334328453 *R/rsextrmat.R
-7b5ffeb67fffbae19d8cea59e7d000e3 *R/rsextrobj.R
-f5999b30f71b9b9e1635a2167d217c9d *R/rstats.R
+e244c70bf3167470939891d0b07e34dd *R/rsextrmat.R
+53cf3ebf0aa9f922bab774573662290f *R/rsextrobj.R
+9823a6f39456ba99e486e6439f3e5bdd *R/rstats.R
 e1414590f20a4138cd04abda1c5066f4 *R/rsunpack.R
 ad5211ab843e04ee7e0564032f0a5f1e *R/summary.RSctr.R
 bb58a9a1c07452f36f935b101a61e52a *R/summary.RSmpl.R
@@ -15,7 +15,7 @@ bac1d538a1aef726f38615aa18f3d48a *data/xmpl.rda
 1fc251a885b608884a2e4b3240d92259 *data/xmplbig.rda
 d3482a367fc1f9aaa27ec2e1618115c4 *man/RSctr.Rd
 a0bfdc2c3a0156ea4cd2bcbdee7dd8e8 *man/RSmpl.Rd
-8ce58747a871df82a3bade4e57805245 *man/RaschSampler-package.Rd
+6eb9ef80c53afce4741a7e53e53f3218 *man/RaschSampler-package.Rd
 37b00ccd880232d2f889b84dc84c5dc8 *man/phi.range.Rd
 ade46dd1d3d391419c9bfc573620a3d0 *man/rsampler.Rd
 61388178ae969add6843305c46c1d72a *man/rsctrl.Rd
@@ -26,3 +26,4 @@ afa498436f176dffc611229bd827ecb1 *man/summary.RSctr.Rd
 158cee36a240d52bde1e3d9a6f90e53f *man/summary.RSmpl.Rd
 3f44b380fea685a7662ffd351a4fe6ac *man/xmpl.Rd
 fd59ab36845ad7023f529dbd04660c40 *src/RaschSampler.f90
+0f1516e88f61bfdd7ee4c30036cacef3 *src/init.c

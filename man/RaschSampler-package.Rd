@@ -1,5 +1,5 @@
 \name{RaschSampler-package}
-\alias{RaschSampler}
+\alias{RaschSampler-package}
 \docType{package}
 \title{Rasch Sampler Package}
 \description{
@@ -31,13 +31,6 @@ has implemented an appropriate option, thus it can be also used for sampling ran
 matrices with given marginal totals.
 }
 \details{
-\tabular{ll}{%
-Package:\tab RaschSampler\cr
-Type:   \tab Package\cr
-Version:\tab 0.8-8\cr
-Date:   \tab 2015-07-23\cr
-License:\tab GNU GPL 2, June 1991\cr%
-}
 The user has to supply a binary input matrix. After defining appropriate control
 parameters using \code{\link{rsctrl}} the sampling function \code{\link{rsampler}}
 may be called to obtain an object of class \code{\link{RSmpl}} which contains the
