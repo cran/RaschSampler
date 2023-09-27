@@ -1,4 +1,4 @@
-ccc9708be59f8a5163ca676b907e6cba *DESCRIPTION
+def4a5e94a58d7d39d6512c744234c3d *DESCRIPTION
 3317f91a8088aa8a509099eb5f808e0b *NAMESPACE
 37383b86a5a2d72e3c196556e3eaf09c *R/phi.range.R
 a880a9eec81089cf678efadc079e12d2 *R/rsampler.R
@@ -25,5 +25,5 @@ be376726ca2bda6d77acd30bef8d8461 *man/rsextrmat.Rd
 afa498436f176dffc611229bd827ecb1 *man/summary.RSctr.Rd
 158cee36a240d52bde1e3d9a6f90e53f *man/summary.RSmpl.Rd
 3f44b380fea685a7662ffd351a4fe6ac *man/xmpl.Rd
-fd59ab36845ad7023f529dbd04660c40 *src/RaschSampler.f90
+7cb8aefd698c61a00c9076832b73aa0d *src/RaschSampler.f90
 0f1516e88f61bfdd7ee4c30036cacef3 *src/init.c
